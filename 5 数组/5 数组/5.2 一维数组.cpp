@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int main52() {
+int main() {
 
 	/*
 	三种方式
@@ -87,13 +87,13 @@ int main52() {
 	2. 对每一对相邻元素做同样的工作，执行完毕后，找到第一个最大值。
 	3. 重复以上的步骤，每次比较次数-1，直到不需要比较
 	*/
-	for (int i = 0; i < num_of_elements; i++) {
-		for (int j = i + 1; j < num_of_elements; j++) {
-			if (pigs_weights[i] > pigs_weights[j]) {
+	for (int i = 0; i < num_of_elements - 1; i++) {
+		for (int j = 0; j < num_of_elements - 1 - i; j++) {
+			if (pigs_weights[j] > pigs_weights[j+1]) {
 				// exchange i-th element and j-element
-				tmp = pigs_weights[i];
-				pigs_weights[i] = pigs_weights[j];
-				pigs_weights[j] = tmp;
+				tmp = pigs_weights[j];
+				pigs_weights[j] = pigs_weights[j+1];
+				pigs_weights[j+1] = tmp;
 			}
 		}
 	}
