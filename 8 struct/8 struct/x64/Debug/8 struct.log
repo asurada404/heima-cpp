@@ -1,0 +1,11 @@
+﻿  8.8 结构体案例.cpp
+print_student.obj : error LNK2005: main 已经在 8.8 结构体案例.obj 中定义
+8.6 结构体做函数参数.obj : error LNK2019: 无法解析的外部符号 "void __cdecl print_student(struct student *)" (?print_student@@YAXPEAUstudent@@@Z)，函数 "private: void __cdecl std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::_Construct_lv_contents(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?_Construct_lv_contents@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAXAEBV12@@Z) 中引用了该符号
+8.2 结构体定义和使用.obj : error LNK2001: 无法解析的外部符号 "void __cdecl print_student(struct student *)" (?print_student@@YAXPEAUstudent@@@Z)
+8.3 结构体数组.obj : error LNK2001: 无法解析的外部符号 "void __cdecl print_student(struct student *)" (?print_student@@YAXPEAUstudent@@@Z)
+8.4 结构体指针.obj : error LNK2001: 无法解析的外部符号 "void __cdecl print_student(struct student *)" (?print_student@@YAXPEAUstudent@@@Z)
+8.5 结构体嵌套结构体.obj : error LNK2001: 无法解析的外部符号 "void __cdecl print_student(struct student *)" (?print_student@@YAXPEAUstudent@@@Z)
+    已定义且可能匹配的符号上的提示:
+      "void __cdecl print_student(struct student const *)" (?print_student@@YAXPEBUstudent@@@Z)
+      "void __cdecl print_student(struct student)" (?print_student@@YAXUstudent@@@Z)
+C:\Users\asu\Documents\heima-cpp\8 struct\x64\Debug\8 struct.exe : fatal error LNK1120: 1 个无法解析的外部命令
